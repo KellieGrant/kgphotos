@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+}
+
+header a img {
+   max-width: 15rem;
+   align-items: center;
+   justify-content: center;
+   margin: 0 10px;
+   padding:  1rem 2rem;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    border-radius: 25px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #df0024;
+    
+}
