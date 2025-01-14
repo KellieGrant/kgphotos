@@ -1,9 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 0;
     margin: 0;
+}
+
+.header-photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.header-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .nav-bar {
@@ -63,31 +86,43 @@ body {
     color: #df0024;
 }
 
-
-.header-photo {
-    position: relative;
+.main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 
-
-
-
-/* header {
+.main .main-text {
     display: flex;
-    height: 3rem;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 50%;
+    height: 50vh;
+    
+}
+
+.main .main-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main .main-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main .main-image {
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.main .main-image img {
     width: 100%;
-    z-index: 10;
-    background-image: url('/assets/Landscape/_KLG1297.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
